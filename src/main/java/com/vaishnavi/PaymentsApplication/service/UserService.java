@@ -11,19 +11,15 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public String testUserRegistrationService() {
-        return "User Registration Service is working!";
+    public UserEntity registerUser(UserEntity user) {
+        return userRepository.save(user);
     }
 
-    public String testUserLoginService() {
-        return "User Login Service is working!";
-    }
-
-    public String testUserDetailsService() {
-        return "User Details Service is working!";
-    }
-
-    public UserEntity getUserByEmail(String email) {
-        return userRepository.findByEmail(email);
+    public UserEntity loginUser(String email, String password) {
+        UserEntity user = userRepository.findByEmail(email);
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        }
+        return null;
     }
 }

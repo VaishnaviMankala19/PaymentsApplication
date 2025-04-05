@@ -16,6 +16,15 @@ public class UserEntity {
     private String password;
     private String phone;
     
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private UserAccountDetailsEntity accountDetails;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<BankAccountsEntity> bankAccounts;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<TransactionEntity> transactions;
+    
     public Long getId() {
 		return id;
 	}
@@ -80,13 +89,6 @@ public class UserEntity {
 		this.transactions = transactions;
 	}
 
-	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private UserAccountDetailsEntity accountDetails;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<BankAccountsEntity> bankAccounts;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<TransactionEntity> transactions;
+	
     
 }
