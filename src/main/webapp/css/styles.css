@@ -1,0 +1,121 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #FC45FF, #3C00FF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auth-card {
+    background: white;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    color: black;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.auth-card h2 {
+    margin-bottom: 25px;
+}
+
+.auth-card input,
+.auth-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #e6e6e6;
+    color: black;
+}
+
+.auth-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #FC45FF, #3C00FF);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.auth-card button:hover {
+    transform: scale(1.05);
+}
+
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: transparent;
+    border: none;
+    color: #3C00FF;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.switch-link a {
+    color: #3C00FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: #FF4B5C;
+    margin-top: 10px;
+}
+
+.success {
+    color: #50fa7b;
+    margin-top: 10px;
+}
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+

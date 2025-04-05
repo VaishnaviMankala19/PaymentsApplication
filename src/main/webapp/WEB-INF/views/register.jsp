@@ -1,30 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Register</title>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/styles.css">
 </head>
 <body>
-<h1>REGISTER PAGE</h1>
-<h2>Register</h2>
 
-<form action="/register" method="post">
-    Name: <input type="text" name="name"/><br/>
-    Email: <input type="email" name="email"/><br/>
-    Password: <input type="password" name="password"/><br/>
-    Phone: <input type="text" name="phone"/><br/>
-    <button type="submit">Register</button>
-</form>
+<div class="auth-container">
+	<button class="back-btn" onclick="history.back()">← Back</button>
 
-<c:if test="${not empty message}">
-    <p style="color:green">${message}</p>
-</c:if>
-<c:if test="${not empty error}">
-    <p style="color:red">${error}</p>
-</c:if>
+    <div class="auth-card">
+        <h2>Register</h2>
+        <form action="/register" method="post">
+            <input type="text" name="name" placeholder="Full Name" required><br/>
+            <input type="email" name="email" placeholder="Email" required><br/>
+            <input type="password" name="password" placeholder="Password" required><br/>
+            <input type="text" name="phone" placeholder="Phone Number" required><br/>
+            <button type="submit">Register</button>
+        </form>
+        
+        <c:if test="${not empty message}">
+            <p class="success">${message}</p>
+        </c:if>
+        <c:if test="${not empty error}">
+            <p class="error">${error}</p>
+        </c:if>
+    </div>
+    
+</div>
 
 </body>
 </html>
