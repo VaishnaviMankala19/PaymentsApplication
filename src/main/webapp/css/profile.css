@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-left h1 {
+    font-size: 20px;
+    color: #3C00FF;
+}
+
+.navbar .nav-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #3C00FF;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-right a:hover {
+    color: #ff3399;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.profile-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3C00FF;
+}
+
+.profile-container p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Form Styling (for editprofile.jsp) */
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.profile-container button {
+    padding: 12px;
+    background: linear-gradient(to right, #3C00FF, #ff3399);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-container button:hover {
+    opacity: 0.9;
+}

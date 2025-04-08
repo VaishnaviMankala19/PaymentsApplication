@@ -22,6 +22,11 @@
             <input type="password" name="password" placeholder="Password" required><br/>
             <input type="text" name="phone" placeholder="Phone Number" required><br/>
             <button type="submit">Register</button>
+            <p class="switch-link"">
+    			Already registered?
+    			<a href="/login">Login here</a>
+			</p>
+            
         </form>
         
        
