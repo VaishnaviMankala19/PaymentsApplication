@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Payments App</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
 </head>
 <body>
@@ -16,7 +16,6 @@
         <ul class="nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="/register">Register</a></li>
             <li><a href="/login" class="gradient-btn">Login</a></li>

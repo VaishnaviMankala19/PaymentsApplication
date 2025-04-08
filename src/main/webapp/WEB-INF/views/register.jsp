@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
 
@@ -24,7 +24,8 @@
             <button type="submit">Register</button>
         </form>
         
-        <c:if test="${not empty message}">
+       
+ <c:if test="${not empty message}">
             <p class="success">${message}</p>
         </c:if>
         <c:if test="${not empty error}">
