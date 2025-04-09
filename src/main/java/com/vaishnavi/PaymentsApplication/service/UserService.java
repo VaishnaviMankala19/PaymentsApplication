@@ -22,4 +22,7 @@ public class UserService {
         }
         return null;
     }
+    public void updateUser(UserEntity user) {
+        userRepository.save(user);  
+    }
 }

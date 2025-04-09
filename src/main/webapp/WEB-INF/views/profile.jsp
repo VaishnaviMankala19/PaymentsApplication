@@ -19,10 +19,11 @@
         <a href="/logout">Logout</a>
     </div>
 </nav>
+<button class="back-btn" onclick="history.back()">← Back</button>
 
 <div class="profile-container">
     <h2>Your Profile</h2>
-    <p><strong>Full Name:</strong> ${user.name}</p>
+    <p><strong>Full Name:</strong> ${user.fullName}</p>
     <p><strong>Email:</strong> ${user.email}</p>
     <p><strong>Phone:</strong> ${user.phone}</p>
 </div>

@@ -17,7 +17,7 @@
     <div class="auth-card">
         <h2>Register</h2>
         <form action="/register" method="post">
-            <input type="text" name="name" placeholder="Full Name" required><br/>
+            <input type="text" name="fullName" placeholder="Full Name" required><br/>
             <input type="email" name="email" placeholder="Email" required><br/>
             <input type="password" name="password" placeholder="Password" required><br/>
             <input type="text" name="phone" placeholder="Phone Number" required><br/>

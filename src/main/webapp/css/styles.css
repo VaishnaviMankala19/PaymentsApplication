@@ -67,17 +67,6 @@ body {
     transform: scale(1.05);
 }
 
-.back-btn {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    background: transparent;
-    border: none;
-    color: #3C00FF;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: underline;
-}
 
 .switch-link {
     margin-top: 20px;

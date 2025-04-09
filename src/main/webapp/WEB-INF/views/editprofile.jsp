@@ -18,13 +18,13 @@
         <a href="/logout">Logout</a>
     </div>
 </nav>
-
+<button class="back-btn" onclick="history.back()">← Back</button>
 <div class="profile-container">
     <h2>Edit Profile</h2>
     <form action="/updateProfile" method="post">
         <input type="hidden" name="id" value="${user.id}" />
         <label>Full Name:</label>
-        <input type="text" name="name" value="${user.name}" required /><br/>
+        <input type="text" name="fullName" value="${user.fullName}" required /><br/>
         <label>Email:</label>
         <input type="email" name="email" value="${user.email}" required /><br/>
         <label>Phone:</label>
