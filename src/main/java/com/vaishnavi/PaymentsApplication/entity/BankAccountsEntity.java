@@ -9,12 +9,13 @@ public class BankAccountsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private String status;
     private String bankName;
     private String accountNumber;
     private String ifscCode;
+    private String accountType;
 
-    @ManyToOne
+	@ManyToOne
     @JoinColumn(name = "user_id")
     private UserEntity user;
 
@@ -57,7 +58,23 @@ public class BankAccountsEntity {
 	public void setUser(UserEntity user) {
 		this.user = user;
 	}
+	
 
+    public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
    
     
 }
