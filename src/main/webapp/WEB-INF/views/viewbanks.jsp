@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/css/viewbanks.css">
 </head>
 <body>
-
    
     <nav class="navbar">
         <div class="nav-left">
@@ -20,7 +19,8 @@
             <a href="/logout">Logout</a>
         </div>
     </nav>
-
+	<button class="back-btn" onclick="history.back()">← Back</button>
+	
     <div class="container">
         <h2>Your Linked Bank Accounts</h2>
 

@@ -61,11 +61,13 @@
             <p>Unlink an existing bank account.</p>
         </div>
         
-        <div class="card" onclick="location.href='/viewbanks'">
-		    <img src="" alt="View Bank">
-		    <h3>View Banks</h3>
-		    <p>View all your active bank accounts.</p>
-		</div>
+       <div class="card" onclick="location.href='/viewbanks'">
+    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331943.png" alt="View Bank">
+    <h3>View Banks</h3>
+    <p>View all your active bank accounts.</p>
+</div>
+
+
 
     </section>
 

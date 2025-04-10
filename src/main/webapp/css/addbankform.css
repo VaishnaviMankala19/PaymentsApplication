@@ -9,30 +9,65 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    min-height: 150vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-left h1 {
+    font-size: 24px;
+    color: #3C00FF;
+}
+
+.nav-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #3C00FF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover {
+    color: #2a00cc;
+}
+
+/* Main Container */
+.main-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 40px 20px;
 }
 
-/* Card Container */
+/* Card */
 .card {
-    background-color: white;
+    background-color: #fff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     text-align: left;
 }
 
 .card h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #3C00FF;
 }
 
-/* Form Fields */
+/* Form */
 form label {
     display: block;
     margin-bottom: 6px;
@@ -48,12 +83,11 @@ form input {
     font-size: 14px;
 }
 
-/* Submit Button */
 form button {
     width: 100%;
     padding: 12px;
     background-color: #3C00FF;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -64,4 +98,19 @@ form button {
 
 form button:hover {
     background-color: #2a00cc;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 }
