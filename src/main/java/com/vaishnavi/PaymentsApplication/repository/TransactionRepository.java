@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface TransactionRepository extends JpaRepository<TransactionEntity, Long> {
     List<TransactionEntity> findByUserId(Long userId);
+    List<TransactionEntity> findByUserEmail(String email);
+
 }
